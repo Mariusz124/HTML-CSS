@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ALGORYTMY ora LOGIKA</h1>
+    <h3>Kliknij jeden z batonów, aby zobaczyć funkcjonowanie bramki LUB</h3>
+    <div class="box">
+        <div class="one">
+            <button id="btn1">pierwszy</button>
+        </div>
+        <div class="one">
+            <button id="btn2">drugi</button>
+        </div>
+        
+    </div>
+    <div id="ball">
+        
+    </div>
+    
+    <div id="footer"><h4>BRAMKA OR nie jest włączona :(-FAŁSZ !, czyli wartośc logiczna:0</h4></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ducimus amet ullam, ipsum beatae labore dolorum optio ab facilis quas eius officia obcaecati? A, consectetur. Optio nihil pariatur ab id?</p>
+    <script>
+        document.getElementById('btn1').addEventListener('click', startAnimation);
+        document.getElementById('btn2').addEventListener('click', startAnimation);
+        function startAnimation(){
+            const ball = document.getElementById("ball");
+            ball.classList.remove("animacja-ball");
+            void ball.offsetWidth;
+            ball.classList.add("animacja-ball");
+        }
+    </script>
+ 
+</body>
+</html>
