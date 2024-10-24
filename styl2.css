@@ -1,0 +1,56 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 150%;
+    
+}
+.baner{
+    background-color: rgb(120,0, 46);
+    color:white;
+    padding:5px;
+    font-size: 150%;
+}
+.stopka{
+    background-color: rgb(120,0, 46);
+    color:white;
+    padding:5px;
+    font-size: 150%;
+}
+.menu{
+    background-color: rgb(173, 20, 87);
+    text-align: left;
+}
+.siatka{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.lewy{
+    background-color:snow;
+    color:olivedrab;
+    height: 322px;
+    text-align: left;
+}
+.prawy{
+    background-color: rgb(173, 20, 87);
+    height: 322px;
+}
+.prawy img{
+    margin:40px;
+    padding:10px; 
+}
+.prawy img:hover{
+    border:1px dotted yellowgreen;
+}
+a{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color:yellowgreen;
+}
+table ,tr,td{
+border:1px solid olivedrab;
+}
+table{
+    width: 90%;
+}

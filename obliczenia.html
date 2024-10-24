@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacja paliw</title>
+  <link rel="stylesheet" href="styl2.css">
+</head>
+
+<body>
+  <section class="baner">
+    <h1>Całodobowa stacja Paliw</h1>
+  </section>
+  <section class="menu">
+    <a href="stacja.html"><img src="home.png" alt="obraz"></a>
+    <a href="obliczenia.html"><img src="znak.png" alt="obraz"></a>
+    <a href="kwerendy.txt">Pobierz dokumenty</a>
+  </section>
+  <section class="siatka">
+    <section class="lewy">
+      <h2>Orientacyjny koszt Paliwa</h2>
+      <form action="">
+        Rodzaj paliwa:
+        <br>
+        <input type="number" name="" id="rodzaj" min="1" max="2">
+        <br>
+        Ile litrów: ?
+        <br>
+        <input type="number" name="" id="litry">
+        <br>
+        <button onclick="iloczyn()">OBLICZ</button>
+        <p id="wynik"></p>
+      </form>
+    </section>
+    <section class="prawy">
+      <img src="samochod.png" alt="samochód">
+    </section>
+  </section>
+  <section class="stopka">
+    <p>Strone opracował: 00000000000</p>
+  </section>
+  <script>
+    function iloczyn(){
+      let a = parseInt(document.getElementById("rodzaj").value);//Sprawdzic dlaczego nie działa ParseInt
+      let b = parseFloat(document.getElementById("litry").value);
+       console.log(a);
+       console.log(b);
+      let koszt=0;
+      if (a==1) {
+        koszt =b*4;
+      } else if (a==2) {
+        koszt = b*3.5;
+
+      } else {
+        koszt = 0;
+      }
+      let c = document.getElementById("wynik").innerHTML = "Wynik=" + koszt.toFixed(2) + "zł";
+      document.write(c);
+    }
+  </script>
+
+</body>
+
+</html>
