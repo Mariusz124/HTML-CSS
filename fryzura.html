@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fryzjerstwo</title>
+    <link rel="stylesheet" href="styl8.css">
+</head>
+<body>
+    <section class="glowny">
+        <section class="siatka1">
+        <section class="lewy1">
+            <a href="index.html"><h1>SALON FRYZJERSKI</h1></a>
+        </section>
+        <section class="lewy2">
+    <h2>Promocja!</h2>
+    <form >
+        <label for="Krótkie">Krótkie</label>
+        <input type="radio" name="Krótkie" id="krotkie" value="Krótkie">
+       
+        <br>
+        <label for="Srednie">Srednie</label>
+        <input type="radio" name="Krótkie" id="srednie" value="Srednie">
+        
+        <br>
+        <label for="Półdługie">Półdługie</label>
+        <input type="radio" name="Krótkie" id="poldlugie" value="Półdługie">
+        <br>
+        <label for="Półdługie">Długie</label>
+        <input type="radio" name="Krótkie" id="dlugie" value="Długie">
+        
+    </form>
+    <br>
+    <button id="przycisk">Odkryj promocje</button>
+    <p id="wynik"></p>
+        </section>
+        <section class="lewy3">
+            <p>,,Witaj Miło nam że odwiedziłeś nasz salon. Sprawdz promocje!</p>
+            <h4>,,Kontakt 444 555 666 </h4>
+        </section>
+    </section>
+    <section class="siatka2">
+        <section class="prawy1">
+           <a href="fryzura.html"> <h4>Ceny strzyżenia</h4></a>
+           <table>
+            <tr>
+                <th>Długosc włosów</th>
+                <th>Cena</th>
+            </tr>
+            <tr>
+                <td>Krótkie</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Srednie</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Półdługie</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Długie</td>
+                <td>50</td>
+            </tr>
+    
+           </table>
+        </section>
+        <section class="prawy2">
+            <img src="obraz1.jpg" alt="Fryzjerka">
+        </section>
+    </section>
+    </section>
+    <section class="stopka">
+        <p>,,Autor: 00000000 </p>
+    </section>
+    <script>
+        let przycisk = document.getElementById("przycisk");
+        przycisk.addEventListener("click",promocja);
+       function promocja(){
+            let krotkie = 25-10;
+            let srednie = 30 -10;
+            let poldlugie = 40 -10;
+            let dlugie = 50-10;
+            if(document.getElementById('krotkie').checked){
+                document.getElementById('wynik').innerHTML="cena promocyjna"+"<br>"+krotkie+"zł";
+            }
+            if(document.getElementById('srednie').checked){
+                document.getElementById('wynik').innerHTML="cena promocyjna"+"<br>"+ srednie + "zł";
+            }
+            if(document.getElementById('poldlugie').checked){
+                document.getElementById('wynik').innerHTML="cena promocyjna" +"<br>"+ poldlugie + "zł";
+            }
+            if(document.getElementById('dlugie').checked){
+                document.getElementById('wynik').innerHTML="cena promocyjna"+"<br>" + dlugie + "zł";
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
